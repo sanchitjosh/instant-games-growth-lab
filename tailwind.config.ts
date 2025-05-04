@@ -64,8 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				agency: {
-					blue: "#1877F2", // Facebook blue
-					lightBlue: "#4267B2", // Alternate Facebook blue
+					blue: "#1e40af", // Changed from #1877F2 to #1e40af
+					lightBlue: "#1e40af", // Changed from #4267B2 to #1e40af
 					accent: "#F97316",
 					dark: "#0F172A",
 					light: "#F8FAFC"
