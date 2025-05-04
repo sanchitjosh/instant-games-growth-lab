@@ -42,18 +42,6 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-agency-dark mb-8 text-center">Games & Companies We've Worked With</h3>
-          <div className="flex flex-wrap justify-center gap-8 opacity-70">
-            {/* Replace with your actual client logos */}
-            {Array.from({ length: 6 }).map((_, index) => (
-              <div key={index} className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">
-                <span className="text-gray-400 font-bold">LOGO {index + 1}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
