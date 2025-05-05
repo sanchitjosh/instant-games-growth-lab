@@ -5,10 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection: React.FC = () => {
   const stats = [
-    { value: "500M+", label: "Total Installs Generated" },
-    { value: "$8.5M+", label: "Revenue Generated" },
-    { value: "350%", label: "Average ROAS" },
-    { value: "23+", label: "Game Publishers Helped" }
+    { value: "500M+", label: "Impressions" },
+    { value: "15M+", label: "Installs" },
+    { value: "$1.6M+", label: "Revenue" },
+    { value: "571%", label: "Average ROAS" }
   ];
 
   return (
