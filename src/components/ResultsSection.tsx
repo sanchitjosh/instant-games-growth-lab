@@ -38,7 +38,7 @@ const ResultsSection: React.FC = () => {
 
   return (
     <section id="results" className="py-16 bg-gray-50 px-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-agency-dark">Our Results</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -47,14 +47,15 @@ const ResultsSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <PortfolioCard
-              key={index}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-            />
+            <div key={index} className="h-full">
+              <PortfolioCard
+                image={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            </div>
           ))}
         </div>
       </div>

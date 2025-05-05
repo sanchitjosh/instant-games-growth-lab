@@ -21,17 +21,17 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
   return (
     <>
       <Card 
-        className="overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer"
+        className="overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer h-full flex flex-col"
         onClick={() => setIsOpen(true)}
       >
-        <div className="relative aspect-[4/3]">
+        <div className="relative w-full" style={{ paddingTop: '75%' }}>
           <img 
             src={image} 
             alt={title} 
-            className="w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover"
           />
         </div>
-        <div className="p-4 space-y-2">
+        <div className="p-4 space-y-2 flex-grow">
           <h3 className="font-bold text-lg text-agency-dark">{title}</h3>
           <p className="text-gray-600 text-sm line-clamp-3">{description}</p>
         </div>
@@ -41,19 +41,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
         <DialogContent className="sm:max-w-xl">
           <DialogHeader>
             <DialogTitle className="text-xl">{title}</DialogTitle>
-            <button 
-              className="absolute right-4 top-4 rounded-full p-2 opacity-70 hover:opacity-100 hover:bg-gray-100"
-              onClick={() => setIsOpen(false)}
-            >
-              <X className="h-4 w-4" />
-              <span className="sr-only">Close</span>
-            </button>
           </DialogHeader>
-          <div className="relative aspect-[4/3] mt-2">
+          <div className="relative w-full" style={{ paddingTop: '65%' }}>
             <img 
               src={image} 
               alt={title} 
-              className="w-full h-full object-cover rounded-md"
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
             />
           </div>
           <p className="text-gray-700 mt-4">{description}</p>
