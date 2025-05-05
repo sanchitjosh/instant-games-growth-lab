@@ -8,14 +8,14 @@ const HeroSection: React.FC = () => {
     <section id="home" className="pt-32 pb-16 px-4 md:pt-40 md:pb-24">
       <div className="container mx-auto">
         <div className="flex justify-center">
-          <div className="space-y-6 max-w-2xl">
+          <div className="space-y-6 max-w-2xl text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-agency-dark leading-tight">
               Accelerate Your <span className="text-agency-blue">Instant Game</span> Growth
             </h1>
             <p className="text-lg md:text-xl text-gray-700">
               We help Facebook Instant Game developers acquire high-quality users, maximize revenue, and achieve exceptional ROAS through data-driven strategies and platform expertise.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-agency-blue hover:bg-agency-blue/90 text-white"

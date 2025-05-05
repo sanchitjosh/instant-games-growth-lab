@@ -13,13 +13,12 @@ const BookCallSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <Card className="overflow-hidden">
             <CardContent className="p-0">
-              <div className="aspect-[3/2] h-[600px] w-full">
-                {/* Replace with your actual Calendly embed code */}
+              <div className="aspect-[4/3] h-[480px] w-full">
                 <iframe
-                  src="https://calendly.com/your-calendly-link"
+                  src="https://calendly.com/wedoacquisition/30min_discover_call"
                   width="100%"
                   height="100%"
                   frameBorder="0"
