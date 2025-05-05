@@ -42,11 +42,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
         <DialogContent className="sm:max-w-xl">
           <DialogHeader>
             <DialogTitle className="text-xl">{title}</DialogTitle>
-            <DialogClose className="absolute right-4 top-4 rounded-full p-2 opacity-70 hover:opacity-100 hover:bg-gray-100">
-              <X className="h-4 w-4" />
-              <span className="sr-only">Close</span>
-            </DialogClose>
           </DialogHeader>
+          <DialogClose className="absolute right-4 top-4 rounded-full p-2 opacity-70 hover:opacity-100 hover:bg-gray-100">
+            <X className="h-4 w-4" />
+            <span className="sr-only">Close</span>
+          </DialogClose>
           <div className="relative aspect-[4/3] mt-2">
             <img 
               src={image} 
