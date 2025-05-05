@@ -5,34 +5,34 @@ import PortfolioCard from './PortfolioCard';
 const ResultsSection: React.FC = () => {
   const portfolioItems = [
     {
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-      title: "Puzzle Game Growth Campaign",
-      description: "Increased DAU by 130% within 3 months while maintaining a 250% ROAS for this popular puzzle game."
+      image: "/lovable-uploads/7619935c-867a-4556-a191-3ed5fba55e96.png",
+      title: "Revenue Growth Strategy",
+      description: "Achieved $717,353 estimated revenue for a client's game over a 6-month campaign with multiple revenue peaks exceeding $28,000 in a single day."
     },
     {
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      title: "Hyper-casual Game Launch",
-      description: "Acquired 1M users in the first week with carefully targeted ad campaigns across Meta platforms."
+      image: "/lovable-uploads/c13e7471-509c-45a6-a7cc-cbaa2ea84d96.png",
+      title: "Global Monetization Strategy",
+      description: "Implemented country-specific targeting resulting in over $313,000 in revenue with impressive impression rates across major markets like India, United States, and Brazil."
     },
     {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      title: "Card Game Monetization",
-      description: "Optimized in-game purchases resulting in 85% increase in ARPU and 200% boost in revenue."
+      image: "/lovable-uploads/65d497d4-7c7a-4e49-bfa5-084d81834b21.png",
+      title: "Ad Spend Optimization",
+      description: "Managed ₹25,035,682 in total ad spend across multiple countries with an average CTR of 2.14% and over 8 million link clicks."
     },
     {
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      title: "Trivia Game Ad Optimization",
-      description: "Cut CPI by 45% while improving user quality metrics through sophisticated targeting algorithms."
+      image: "/lovable-uploads/55b2cad5-906f-4403-a682-499edada2965.png",
+      title: "Performance Metrics Improvement",
+      description: "Increased CTR by 9.91% while optimizing eCPM to $3.96, creating balanced performance between impressions and revenue generation."
     },
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-      title: "Strategy Game Retention",
-      description: "Implemented re-engagement campaigns that improved 30-day retention by 40% and boosted LTV by 75%."
+      image: "/lovable-uploads/579b7672-886c-4d66-a6f0-c088d194e6e7.png",
+      title: "Multi-Country Campaign Management",
+      description: "Successfully managed 17 concurrent campaigns across global markets, generating over 9.8 million impressions and nearly $16,000 in total spend with optimal cost efficiency."
     },
     {
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      title: "Casual Game Cross Promotion",
-      description: "Created a cross-promotion network that reduced UA costs by 35% across multiple game titles."
+      image: "/lovable-uploads/2754ae64-d758-49a3-9d3e-01d97bf49d76.png",
+      title: "Geographic Performance Analysis",
+      description: "Achieved exceptional performance in Brazil with 783.97% revenue growth and 704.33% increase in clicks, while maintaining strong metrics across 10+ countries."
     }
   ];
 
