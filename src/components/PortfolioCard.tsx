@@ -24,11 +24,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
         className="overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer h-full flex flex-col"
         onClick={() => setIsOpen(true)}
       >
-        <div className="relative w-full" style={{ paddingTop: '75%' }}>
+        <div className="relative w-full pb-[60%]">
           <img 
             src={image} 
             alt={title} 
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-contain bg-white"
           />
         </div>
         <div className="p-4 space-y-2 flex-grow">
@@ -38,15 +38,22 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
       </Card>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-xl">
+        <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-xl">{title}</DialogTitle>
+            <button 
+              onClick={() => setIsOpen(false)} 
+              className="absolute top-4 right-4 p-1 rounded-full hover:bg-gray-100"
+              aria-label="Close"
+            >
+              <X size={20} />
+            </button>
           </DialogHeader>
-          <div className="relative w-full" style={{ paddingTop: '65%' }}>
+          <div className="w-full max-h-[70vh] overflow-hidden">
             <img 
               src={image} 
               alt={title} 
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+              className="w-full h-auto object-contain rounded-md"
             />
           </div>
           <p className="text-gray-700 mt-4">{description}</p>

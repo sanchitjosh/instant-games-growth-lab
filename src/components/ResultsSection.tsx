@@ -37,17 +37,17 @@ const ResultsSection: React.FC = () => {
   ];
 
   return (
-    <section id="results" className="py-16 bg-gray-50 px-4">
-      <div className="container mx-auto max-w-6xl">
+    <section id="results" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-agency-dark">Our Results</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             We've helped dozens of Instant Game developers achieve remarkable growth. 
             Here are some of our recent success stories.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {portfolioItems.map((item, index) => (
             <div key={index} className="h-full">
               <PortfolioCard
