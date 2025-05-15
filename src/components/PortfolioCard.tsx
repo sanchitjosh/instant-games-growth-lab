@@ -13,10 +13,12 @@ interface PortfolioCardProps {
   image: string;
   title: string;
   description: string;
+  index: number; // Add index to determine if it's in the first row
 }
 
-const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description }) => {
+const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description, index }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const isFirstRow = index < 3; // First three items are in the first row
 
   return (
     <>
@@ -24,11 +26,14 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
         className="overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer h-full flex flex-col"
         onClick={() => setIsOpen(true)}
       >
-        <div className="relative w-full pb-[60%]">
+        <div className="relative w-full pb-[60%] bg-white">
           <img 
             src={image} 
             alt={title} 
-            className="absolute top-0 left-0 w-full h-full object-contain bg-white"
+            className={`absolute top-0 left-0 w-full h-full ${isFirstRow 
+              ? "object-contain scale-110 p-2" // Slightly zoom in first row images
+              : "object-contain bg-white" // Keep second row as is
+            }`}
           />
         </div>
         <div className="p-4 space-y-2 flex-grow">
