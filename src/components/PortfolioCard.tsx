@@ -31,7 +31,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
             src={image} 
             alt={title} 
             className={`absolute top-0 left-0 w-full h-full ${isFirstRow 
-              ? "object-contain scale-110 p-2" // Slightly zoom in first row images
+              ? "object-contain scale-125 p-3" // Increase zoom for first row images
               : "object-contain bg-white" // Keep second row as is
             }`}
           />
@@ -43,7 +43,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
       </Card>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="sm:max-w-4xl w-[95vw] max-h-[95vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-xl">{title}</DialogTitle>
             <button 
@@ -54,7 +54,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
               <X size={20} />
             </button>
           </DialogHeader>
-          <div className="w-full max-h-[70vh] overflow-hidden">
+          <div className="w-full max-h-[80vh] overflow-hidden">
             <img 
               src={image} 
               alt={title} 
