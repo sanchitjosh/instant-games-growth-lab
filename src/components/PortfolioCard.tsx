@@ -31,7 +31,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title, description
             src={image} 
             alt={title} 
             className={`absolute top-0 left-0 w-full h-full ${isFirstRow 
-              ? "object-contain scale-175 p-4" // Increase zoom to 175% for first row images
+              ? "object-contain scale-175 transform-origin-center p-2" // Increase zoom to 175% for first row images
               : "object-contain bg-white" // Keep second row as is
             }`}
           />
