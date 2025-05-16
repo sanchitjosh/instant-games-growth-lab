@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-agency-dark text-white py-12 px-4">
+  return <footer className="bg-agency-dark text-white py-12 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
@@ -27,7 +24,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-300">Email: info@instantacquisition.com</li>
+              <li className="text-gray-300">Email: instantacquisition@gmail.com</li>
               <li className="text-gray-300">Phone: +1 (123) 456-7890</li>
               <li>
                 <div className="flex space-x-4 mt-4">
@@ -45,8 +42,6 @@ const Footer: React.FC = () => {
           <p>© {new Date().getFullYear()} Instant Acquisition Agency. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
