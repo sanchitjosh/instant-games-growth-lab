@@ -1,8 +1,10 @@
+
 import React from 'react';
+
 const Footer: React.FC = () => {
   return <footer className="bg-agency-dark text-white py-12 px-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-2xl font-bold mb-4">Instant <span className="text-agency-blue">Acquisition</span></h2>
             <p className="text-gray-300 max-w-md">
@@ -24,15 +26,13 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-300">Email: instantacquisition@gmail.com</li>
-              <li className="text-gray-300">Phone: +1 (123) 456-7890</li>
               <li>
-                <div className="flex space-x-4 mt-4">
-                  {/* Social Media Links */}
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">FB</a>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">TW</a>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">LI</a>
-                </div>
+                <a 
+                  href="mailto:instantacquisition@gmail.com" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Email: instantacquisition@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -44,4 +44,5 @@ const Footer: React.FC = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
