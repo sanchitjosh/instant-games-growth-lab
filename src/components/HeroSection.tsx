@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Play } from "lucide-react";
+import { Mail } from "lucide-react";
+
 const HeroSection: React.FC = () => {
   return <section id="home" className="pt-32 pb-16 px-4 md:pt-40 md:pb-24">
       <div className="container mx-auto">
@@ -18,10 +20,13 @@ const HeroSection: React.FC = () => {
             })}>
                 Book a Free Strategy Call
               </Button>
-              <Button size="lg" variant="outline" className="border-agency-blue text-agency-blue hover:bg-agency-blue/10" onClick={() => document.getElementById('video')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
-                <Play className="mr-2 h-4 w-4" /> Watch Intro Video
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-agency-blue text-agency-blue hover:bg-agency-blue/10"
+                onClick={() => window.location.href = 'mailto:instantacquisition@gmail.com'}
+              >
+                <Mail className="mr-2 h-4 w-4" /> Email Us
               </Button>
             </div>
           </div>
@@ -29,4 +34,5 @@ const HeroSection: React.FC = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
