@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-agency-dark mb-6">About Our Expertise</h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                With over a decade of experience in mobile gaming and user acquisition, our team specializes exclusively in the Facebook Instant Games ecosystem. We understand the unique challenges and opportunities this platform presents.
+                As specialists in the Facebook Instant Games ecosystem, our team brings focused expertise to help developers succeed on this unique platform. We understand the specific challenges and opportunities that Instant Games present.
               </p>
               <p>
                 Our data-driven approach combines deep platform knowledge with cutting-edge analytics to optimize every aspect of your user acquisition funnel, from creative strategy to audience targeting.
