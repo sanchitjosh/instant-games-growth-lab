@@ -24,7 +24,8 @@ const Footer: React.FC = () => {
             
             <a 
               href="mailto:growth@instantacquisition.co" 
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+              onClick={() => window.location.href = 'mailto:growth@instantacquisition.co'}
             >
               Email: growth@instantacquisition.co
             </a>

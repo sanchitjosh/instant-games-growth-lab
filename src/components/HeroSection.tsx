@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
                 size="lg" 
                 variant="outline" 
                 className="border-agency-blue text-agency-blue hover:bg-agency-blue/10"
-                onClick={() => window.open('mailto:growth@instantacquisition.co', '_blank')}
+                onClick={() => window.location.href = 'mailto:growth@instantacquisition.co'}
               >
                 <Mail className="mr-2 h-4 w-4" /> Email Us
               </Button>
