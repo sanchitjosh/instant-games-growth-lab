@@ -23,10 +23,10 @@ const Footer: React.FC = () => {
             </div>
             
             <a 
-              href="mailto:instantacquisition@gmail.com" 
+              href="mailto:growth@instantacquisition.co" 
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Email: instantacquisition@gmail.com
+              Email: growth@instantacquisition.co
             </a>
           </div>
         </div>
