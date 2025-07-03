@@ -2,6 +2,15 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const handleEmailClick = () => {
+    const email = 'growth@instantacquisition.co';
+    
+    // Create a temporary anchor element to trigger the email
+    const link = document.createElement('a');
+    link.href = `mailto:${email}`;
+    link.click();
+  };
+
   return (
     <footer className="bg-agency-dark text-white py-8 px-4">
       <div className="container mx-auto">
@@ -22,13 +31,12 @@ const Footer: React.FC = () => {
               <a href="#video" className="text-gray-300 hover:text-white transition-colors">Watch Demo</a>
             </div>
             
-            <a 
-              href="mailto:growth@instantacquisition.co" 
+            <button 
               className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-              onClick={() => window.location.href = 'mailto:growth@instantacquisition.co'}
+              onClick={handleEmailClick}
             >
               Email: growth@instantacquisition.co
-            </a>
+            </button>
           </div>
         </div>
         

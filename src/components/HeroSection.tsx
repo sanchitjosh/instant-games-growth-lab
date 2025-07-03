@@ -4,7 +4,19 @@ import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 
 const HeroSection: React.FC = () => {
-  return <section id="home" className="pt-32 pb-16 px-4 md:pt-40 md:pb-24">
+  const handleEmailClick = () => {
+    const email = 'growth@instantacquisition.co';
+    const subject = 'Inquiry about Instant Games Growth';
+    const body = 'Hi, I would like to learn more about your services.';
+    
+    // Create a temporary anchor element to trigger the email
+    const link = document.createElement('a');
+    link.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    link.click();
+  };
+
+  return (
+    <section id="home" className="pt-32 pb-16 px-4 md:pt-40 md:pb-24">
       <div className="container mx-auto">
         <div className="flex justify-center">
           <div className="space-y-6 max-w-2xl text-center">
@@ -24,7 +36,7 @@ const HeroSection: React.FC = () => {
                 size="lg" 
                 variant="outline" 
                 className="border-agency-blue text-agency-blue hover:bg-agency-blue/10"
-                onClick={() => window.location.href = 'mailto:growth@instantacquisition.co'}
+                onClick={handleEmailClick}
               >
                 <Mail className="mr-2 h-4 w-4" /> Email Us
               </Button>
@@ -32,7 +44,8 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 
 export default HeroSection;
