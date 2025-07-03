@@ -9,10 +9,8 @@ const HeroSection: React.FC = () => {
     const subject = 'Inquiry about Instant Games Growth';
     const body = 'Hi, I would like to learn more about your services.';
     
-    // Create a temporary anchor element to trigger the email
-    const link = document.createElement('a');
-    link.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    link.click();
+    // Use window.location.href for better compatibility
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

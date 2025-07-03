@@ -5,10 +5,8 @@ const Footer: React.FC = () => {
   const handleEmailClick = () => {
     const email = 'growth@instantacquisition.co';
     
-    // Create a temporary anchor element to trigger the email
-    const link = document.createElement('a');
-    link.href = `mailto:${email}`;
-    link.click();
+    // Use window.location.href for better compatibility
+    window.location.href = `mailto:${email}`;
   };
 
   return (
