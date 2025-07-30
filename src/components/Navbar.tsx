@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -19,8 +18,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Results', href: '#results' },
-    { name: 'Watch Demo', href: '#video' }
+    { name: 'Results', href: '#results' }
   ];
 
   return (
